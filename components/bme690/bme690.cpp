@@ -3,8 +3,9 @@
 #include "esphome/core/hal.h"
 
 // Include BME69x C implementation directly
+// NOTE: File must be named bme69x.c.inc to prevent double compilation
 extern "C" {
-#include "bme69x.c"
+#include "bme69x.c.inc"
 }
 
 namespace esphome {
